@@ -5,15 +5,15 @@ schedule2 = "09:01-18:00"
 schedule3 = "18:01-23:59"
 weekend_bonus = 5
 
-with open('employee_data.txt') as f:
-    data = f.readlines()
-data = [x.strip() for x in data]
-
 payment_dict = {
     schedule1: 25,
     schedule2: 15,
     schedule3: 20
 }
+
+with open('employee_data.txt') as f:
+    data = f.readlines()
+data = [x.strip() for x in data]
 
 
 def split_time_string(time_string):
@@ -51,7 +51,7 @@ def calculate_salary():
         for payment in employe_payment_arr:
             payment_schedule = payment[2::]
             hours_worked_price = calculate_hour_worked_price(payment_schedule)
-            if payment[0:2] in ["MO", "TU", "WE", "TH", "FR"]:
+            if payment_schedule in ["MO", "TU", "WE", "TH", "FR"]:
                 employee_salary += hours_worked_price[0]*hours_worked_price[1]
             else:
                 employee_salary += (hours_worked_price[0] +
@@ -61,4 +61,5 @@ def calculate_salary():
             employee_name, employee_salary))
 
 
-calculate_salary()
+if __name__ == '__main__':
+    calculate_salary()
