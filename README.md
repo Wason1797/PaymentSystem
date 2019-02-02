@@ -1,6 +1,6 @@
 # PaymentSystem
 
-Hi everyone, this in exersice sent to me by ioet EC, i had a great time solving it, and i hope mi solution complies with the requirements.
+Hi everyone, this in exercise sent to me by ioet EC, I had a great time solving it, and I hope mi solution complies with the requirements.
 
 ## The Problem
 
@@ -58,7 +58,7 @@ The amount to pay ASTRID is: 85 USD
 
 ## My solution
 
-The first thing i did was to figure a way to compare time strings and get the actual range in which the employee worked, after solving that everything was easier, i could figure out how many hours the employee worked subtracting the final time and the initial time, and from then it was basic math.
+The first thing i did was to figure a way to compare time strings and get the actual range in which the employee worked, after solving that everything was easier, I could figure out how many hours the employee worked subtracting the final time and the initial time, and from then it was basic math.
 
 ## To run the code
 
