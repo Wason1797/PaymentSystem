@@ -62,6 +62,10 @@ The first thing i did was to figure a way to compare time strings and get the ac
 
 ## To run the code
 
-Just use the command `python {working directory path}/solution/payment_calculator.py`
+Use the command `python {working directory path}/solution/payment_calculator.py`
 
 To change the inputs just edit `employee_data.txt` using the format of the exercise.
+
+## To run the tests
+
+Use the command `python {working directory path}/solution/tests.py`

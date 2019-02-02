@@ -23,7 +23,6 @@ def split_time_string(time_string):
 
 
 def calculate_hour_worked_price(time_string):
-
     time_string = split_time_string(time_string)
     schedule_range1 = split_time_string(schedule1)
     schedule_range2 = split_time_string(schedule2)
@@ -51,7 +50,7 @@ def calculate_salary():
         for payment in employe_payment_arr:
             payment_schedule = payment[2::]
             hours_worked_price = calculate_hour_worked_price(payment_schedule)
-            if payment_schedule in ["MO", "TU", "WE", "TH", "FR"]:
+            if payment[0:2] in ["MO", "TU", "WE", "TH", "FR"]:
                 employee_salary += hours_worked_price[0]*hours_worked_price[1]
             else:
                 employee_salary += (hours_worked_price[0] +
